@@ -1,6 +1,9 @@
 package com.zvm.test;
 
 /**
+ * 加载
+ * 连接   验证--准备（赋予默认值）--解析
+ * 初始化
  * @author Ted
  * @version 1.0
  * @date 2020/7/25 12:19

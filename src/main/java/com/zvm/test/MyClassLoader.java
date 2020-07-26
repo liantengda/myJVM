@@ -21,11 +21,9 @@ public class MyClassLoader extends ClassLoader {
             FileInputStream fis = new FileInputStream(file);
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             int b = 0;
-
             while ((b = fis.read())!=-1){
                 baos.write(b);
             }
-
             byte[] bytes = baos.toByteArray();
             System.out.println(bytes.length);
             String s = new String(bytes);
@@ -36,7 +34,6 @@ public class MyClassLoader extends ClassLoader {
         }catch (Exception e){
             e.printStackTrace();
         }
-
         return super.findClass(name);
     }
 
